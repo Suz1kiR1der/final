@@ -29,6 +29,8 @@ public class PlayerMaker
 						System.out.println("Let's get it onnn!!!");
 					}
 				System.out.println("Ok, you will have 3 players to face 3 bad guys. Let the games begin!!!");
+				System.out.println("____________________________________");
+				System.out.println("");
 			}
 		public static void userPlayerMaker()
 			{
@@ -256,18 +258,154 @@ public class PlayerMaker
 			}
 		public static void comPlayerMaker()
 			{
-				int com = (int)(Math.random()* 3)+1;
+				int com = (int)(Math.random()* 37)+1;
 				if(com == 1)
 					{
-						System.out.println("And your enemies are: Kobald, Dark Wizard, and Dragon");
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Dragon.");
 					}
 				if(com == 2)
 					{
-						System.out.println("And your enemies are: Kobald, Dark Wizard, and gelatin cube");
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Gelatin Cube.");
 					}
 				if(com == 3)
 					{
-						System.out.println("And your enemies are: Kobald, Dark Wizard, and Giants");
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Giant.");
+					}
+				if(com == 4)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Goblin.");
+					}
+				if(com == 5)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and an Orc.");
+					}
+				if(com == 6)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and the Beholder.");
+					}
+				if(com == 7)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Vampire King.");
+					}
+				if(com == 8)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Vampire Queen.");
+					}
+				if(com == 9)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and Alduin.");
+					}
+				if(com == 10)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Griffin.");
+					}
+				if(com == 11)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Ogre.");
+					}
+				if(com == 12)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and Nezznar the Black Spider .");
+					}
+				if(com == 13)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and Mormesk the Wraith .");
+					}
+				if(com == 14)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Gargoyle.");
+					}
+				if(com == 15)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and an Wyvern.");
+					}
+				if(com == 16)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Stone Giant.");
+					}
+				if(com == 17)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Stone Golem.");
+					}
+				if(com == 18)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Troll.");
+					}
+				if(com == 19)
+					{
+						System.out.println("And your enemies are: Kobald, Dark Wizard, and a Death Knight.");
+					}
+				if(com == 20)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Gelatin Cube.");
+					}
+				if(com == 21)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Giant.");
+					}
+				if(com == 22)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Goblin.");
+					}
+				if(com == 23)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and an Orc.");
+					}
+				if(com == 24)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and the Beholder.");
+					}
+				if(com == 25)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Vampire King.");
+					}
+				if(com == 26)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Vampire Queen.");
+					}
+				if(com == 27)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and Alduin.");
+					}
+				if(com == 28)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Griffin.");
+					}
+				if(com == 29)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Ogre.");
+					}
+				if(com == 30)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Nezznar the Black Spider.");
+					}
+				if(com == 31)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Mormesk the Wraith.");
+					}
+				if(com == 32)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Gargoyle.");
+					}
+				if(com == 33)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Wyvern.");
+					}
+				if(com == 34)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Stone Giant.");
+					}
+				if(com == 35)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Stone Golem.");
+					}
+				if(com == 36)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Troll.");
+					}
+				if(com == 37)
+					{
+						System.out.println("And your enemies are: Dark Wizard, Dragon, and a Death Knight.");
 					}
 			}
 	}
