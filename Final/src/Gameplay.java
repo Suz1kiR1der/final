@@ -7,6 +7,7 @@ public class Gameplay
 		static int randomNumber = (int)(Math.random()* 5)+1;
 		static ArrayList<Gameplay>comSkills = new ArrayList<Gameplay>();
 		static ArrayList<Gameplay>playerSkills = new ArrayList<Gameplay>();
+		static int randomNumber1;
 		private int defense;
 		private int health;
 		private String name;
@@ -24,9 +25,8 @@ public class Gameplay
 				comPlayerMaker();
 				determiningTheCharacter();
 				runningTheGame();
-				checkComWonGame();
 				checkWonGame();
-				//theBeholder();
+				theBeholder();
 			}
 		public static void userPlayerMaker()
 			{
@@ -170,35 +170,101 @@ public class Gameplay
 			}
 		public static void theBeholder()
 		{
-			if(com = comSkills.get(2))
+			if(randomNumber == 3)
 			{
 				int dieRoll3 = (int)(Math.random()*4)+1;
+				if(dieRoll3 == 1)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 1);
+					}
+				if(dieRoll3 == 2)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 2);
+					}
+				if(dieRoll3 == 3)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 3);
+					}
+				if(dieRoll3 == 4)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 4);
+					}
+				System.out.println(playerSkills.get(player).getHealth());
 				int dieRoll4 = (int)(Math.random()*4)+1;
+				if(dieRoll4 == 1)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 1);
+					}
+				if(dieRoll4 == 2)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 2);
+					}
+				if(dieRoll4 == 3)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 3);
+					}
+				if(dieRoll4 == 4)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 4);
+					}
+				System.out.println(playerSkills.get(player).getHealth());
 				int dieRoll5 = (int)(Math.random()*4)+1;
+				if(dieRoll5 == 1)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 1);
+					}
+				if(dieRoll5 == 2)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 2);
+					}
+				if(dieRoll5 == 3)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 3);
+					}
+				if(dieRoll5 == 4)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 4);
+					}
+				System.out.println(playerSkills.get(player).getHealth());
 				int dieRoll6 = (int)(Math.random()*4)+1;
+				if(dieRoll6 == 1)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 1);
+					}
+				if(dieRoll6 == 2)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 2);
+					}
+				if(dieRoll6 == 3)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 3);
+					}
+				if(dieRoll6 == 4)
+					{
+						playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 4);
+					}
+				System.out.println(playerSkills.get(player).getHealth());
 			}
-		}
-		public static boolean checkComWonGame()
-		{
-			if(playerSkills.get(player).getHealth() <= 0)
-				{
-					System.out.println("Sorry, you have lost the game.");
-				}
-			else
-				{
-					return false;
-				}
-			return true;
 		}
 		public static boolean checkWonGame()
 			{
 				if(comSkills.get(player).getHealth() <= 0)
 					{
 						System.out.println("Yay! You have won the game!");
+						System.exit(0);
 					}
 				else
 					{
-						return false;
+						
+					}
+				if(playerSkills.get(player).getHealth() <= 0)
+					{
+						System.out.println("Sorry, you have lost the game.");
+						System.exit(0);
+					}
+				else
+					{
+						
 					}
 				return true;
 			}
