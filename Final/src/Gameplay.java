@@ -166,6 +166,7 @@ public class Gameplay
 							playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 4);
 						}
 					System.out.println(playerSkills.get(player).getHealth());
+					System.out.println("....Is your new health.");
 				}
 			}
 		public static void theBeholder()
