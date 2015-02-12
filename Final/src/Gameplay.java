@@ -168,16 +168,16 @@ public class Gameplay
 					System.out.println(playerSkills.get(player).getHealth());
 				}
 			}
-//		public static void theBeholder()
-//		{
-//			if(com = comSkills.get(2))
-//			{
-//				int dieRoll = (int)(Math.random()*4)+1;
-//				int dieRoll = (int)(Math.random()*4)+1;
-//				int dieRoll = (int)(Math.random()*4)+1;
-//				int dieRoll = (int)(Math.random()*4)+1;
-//			}
-//		}
+		public static void theBeholder()
+		{
+			if(com = comSkills.get(2))
+			{
+				int dieRoll3 = (int)(Math.random()*4)+1;
+				int dieRoll4 = (int)(Math.random()*4)+1;
+				int dieRoll5 = (int)(Math.random()*4)+1;
+				int dieRoll6 = (int)(Math.random()*4)+1;
+			}
+		}
 		public static boolean checkComWonGame()
 		{
 			if(playerSkills.get(player).getHealth() <= 0)
