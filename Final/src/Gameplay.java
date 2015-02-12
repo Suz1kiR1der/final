@@ -24,6 +24,7 @@ public class Gameplay
 				comPlayerMaker();
 				determiningTheCharacter();
 				runningTheGame();
+				checkComWonGame();
 				checkWonGame();
 				//theBeholder();
 			}
@@ -101,33 +102,32 @@ public class Gameplay
 					System.out.println("Hit d enter for damage roll.");
 					String d = userlnput1.nextLine();
 					int dieRoll1 = (int)(Math.random()* 6)+1;
+					System.out.println("The die roll is " + dieRoll1 + ".");
 					if(dieRoll1 == 1)
 					{
-						//comSkills.getHealth().setHealth( - 1);
+						comSkills.get(player).setHealth(comSkills.get(player).getHealth() - 1);
 					}
 					if(dieRoll1 == 2)
 					{
-//						comSkills.getHealth().setHealth( - 2);
+						comSkills.get(player).setHealth(comSkills.get(player).getHealth() - 2);
 					}
 					if(dieRoll1 == 3)
 					{
-//						comSkills.getHealth().setHealth( - 3);
+						comSkills.get(player).setHealth(comSkills.get(player).getHealth() - 3);
 					}
 					if(dieRoll1 == 4)
 					{
-//						comSkills.getHealth().setHealth( - 4);
-						//System.out.println(comSkills.getHealth());
+						comSkills.get(player).setHealth(comSkills.get(player).getHealth() - 4);
 					}
 					if(dieRoll1 == 5)
 					{
-						//comSkills.getHealth().setHealth();
-						//System.out.println(comSkills.getHealth());
+						comSkills.get(player).setHealth(comSkills.get(player).getHealth() - 5);
 					}
 					if(dieRoll1 == 6)
 					{
-						//comSkills.getHealth().setHealth( - 6);
-						//System.out.println(comSkills.getHealth());
+						comSkills.get(player).setHealth(comSkills.get(player).getHealth() - 6);
 					}
+					System.out.println(comSkills.get(player).getHealth());
 				}
 				else
 				{
@@ -145,24 +145,28 @@ public class Gameplay
 				{
 					System.out.println("Monster missed :) :) :) :) :)!!!!");
 				}
-				int dieRoll2 = (int)(Math.random()* 4)+1;
-				if(dieRoll2 == 1)
+				if(comRoll > playerSkills.get(player).getDefense())
 				{
-					//playerSkills.getHealth().setHealth( - 1);
+					int dieRoll2 = (int)(Math.random()* 4)+1;
+					System.out.println("His die roll is " + dieRoll2 + ".");
+					if(dieRoll2 == 1)
+						{
+							playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 1);
+						}
+					if(dieRoll2 == 2)
+						{
+							playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 2);
+						}
+					if(dieRoll2 == 3)
+						{
+							playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 3);
+						}
+					if(dieRoll == 4)
+						{
+							playerSkills.get(player).setHealth(playerSkills.get(player).getHealth() - 4);
+						}
+					System.out.println(playerSkills.get(player).getHealth());
 				}
-				if(dieRoll2 == 2)
-				{
-					//playerSkills.getHealth().setHealth( - 2);
-				}
-				if(dieRoll2 == 3)
-				{
-					//playerSkills.getHealth().setHealth( - 3);
-				}
-				if(dieRoll == 4)
-				{
-					//playerSkills.getHealth().setHealth( - 4);
-				}
-				runningTheGame();
 			}
 //		public static void theBeholder()
 //		{
@@ -174,10 +178,30 @@ public class Gameplay
 //				int dieRoll = (int)(Math.random()*4)+1;
 //			}
 //		}
-		public static void checkWonGame()
+		public static boolean checkComWonGame()
 		{
-			
+			if(playerSkills.get(player).getHealth() <= 0)
+				{
+					System.out.println("Sorry, you have lost the game.");
+				}
+			else
+				{
+					return false;
+				}
+			return true;
 		}
+		public static boolean checkWonGame()
+			{
+				if(comSkills.get(player).getHealth() <= 0)
+					{
+						System.out.println("Yay! You have won the game!");
+					}
+				else
+					{
+						return false;
+					}
+				return true;
+			}
 		public int getDefense()
 			{
 				return defense;
